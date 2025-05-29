@@ -1,0 +1,179 @@
+.Section{
+	margin: 6rem 0;
+	position:relative;
+	@media only screen and (max-width: 37.5rem) {
+			padding:  0 1rem !important;
+	}
+}
+
+.Heading{
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 4rem;
+	
+	&__bold{
+		display: block;
+		font-weight: 600;
+	}
+
+	&__accent{
+		color: var(--c-p);
+	}
+
+	@media only screen and (max-width: 47rem) {
+		text-align: center;
+		margin-top: 2rem;
+	}
+	@media only screen and (max-width: 37.5rem) {
+		font-size: 2.8rem;
+	}
+}
+
+
+.Item{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	&:not(:last-child){
+		margin-bottom: 1rem;
+	}
+
+	&__Title{
+		font-size: 1.8rem;
+
+		&__Bold{
+			font-weight: 500;
+		}
+	}
+	&__NoIcon{
+		padding-left: calc(24px + 1rem);
+	}
+}
+
+.Case{
+	display: flex;
+	align-items: flex-start;
+	gap: 4rem;
+
+		@media only screen and (max-width: 68.75rem) {
+		flex-direction: column;
+	}
+
+	&__Heading{
+		font-size: 2.4rem;
+		font-weight: 500;
+		margin-bottom: 0.5rem;
+	}
+
+	&__Subheading{
+		font-size: 1.8rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+	}
+
+	&__ImageBlock{
+		flex-basis: 65%;
+			@media only screen and (max-width: 68.75rem) {
+				flex-basis: 100%;
+			}
+	}
+
+	&__TextBlock{
+		flex-basis: 35%;
+		@media only screen and (max-width: 68.75rem) {
+				flex-basis: 100%;
+			}
+	}
+}
+
+
+.Thumbnails{
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.Thumbnail{
+	width: 100px;
+	height: 100px;
+	border-radius: var(--br-sm);
+	margin-top: 1.5rem;
+
+	@media only screen and (max-width: 37.5rem) {
+			width: calc(100% / 5);
+			height: auto;
+			aspect-ratio: 1/1;
+	}
+	& > img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: var(--br-sm);
+	}
+}
+
+.ThumbnailLimit{
+	display: none;
+}
+
+.NotOverview{
+	display: none;
+}
+
+.Overview{
+	border-radius: var(--br-sm);
+}
+
+
+.Embla{
+	overflow: hidden;
+	margin: 0 7rem;
+	@media only screen and (max-width: 37.5rem) {
+			margin: 0;
+	}
+}
+
+.Embla__Container{
+	display: flex;
+	gap: 4rem;
+}
+
+.Embla__Slide{
+	flex: 0 0 100%;
+	min-width: 0;
+	min-height: 350px;
+	height: 100%;
+	padding: 2rem 0;
+}
+
+.EmblaDots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 6rem;
+}
+
+.EmblaDot{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 2px solid var(--c-g);
+	transition: border-color 0.3s ease-out;
+	&__Selected{
+		border-color: var(--c-s);
+	}
+}
+
+.Button{
+		margin-left: calc(24px + 1rem);
+		margin-top: 2rem;
+		width: 220px;
+		@media only screen and (max-width: 25rem) {
+			// margin-left: 0;
+			// margin: 0 auto;
+	}
+}

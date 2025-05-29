@@ -1,0 +1,110 @@
+.Section{
+	margin: 6rem 0;
+}
+
+.Heading{
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 2rem;	
+	&__bold{
+		font-weight: 600;
+	}
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 3.2rem;
+		}
+		@media only screen and (max-width: 20rem) {
+			font-size: 2.8rem;
+		}
+}
+
+.Subheading{
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 4rem;
+	&__bold{
+		font-weight: 600;
+	}
+	@media only screen and (max-width: 37.5rem) {
+			font-size: 1.8rem;
+		}
+	@media only screen and (max-width: 20rem) {
+			font-size: 1.6rem;
+		}
+}
+
+.Wrapper{
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	@media only screen and (max-width: 56.25rem) {
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
+
+.Contacts{
+	background-color: var(--c-gb);
+	border-radius: var(--br-md);
+	padding: 2rem;
+	flex-basis: 30%;
+	height: 100%;
+		@media only screen and (max-width: 56.25rem) {
+			flex-basis: 100%;
+			width: 100%;
+		}
+}
+
+.ContactEntity{
+	margin-bottom: 1.5rem;
+	&__Name{
+		font-size: 1.8rem;
+		font-weight: 600;
+		padding-bottom: .5rem;
+	}
+
+	&__Value{
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
+
+	&__Flex{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap:1rem;
+	}
+
+	&__Hours{
+		position: relative;
+		&::before{
+			content: "";
+			display: inline-block;
+			background-color: var(--c-p);
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: -10px;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.Map {
+    height: 100vh;
+		flex-basis: 70%;
+		border-radius: var(--br-md);
+		@media only screen and (max-width: 56.25rem) {
+			flex-basis: 100%;
+			width: 100%;
+			height: 400px;
+			min-height: 400px;
+		}
+    // @media only screen and (max-width: 58.875rem) {
+    //     height: 400px;
+    // }
+}

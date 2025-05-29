@@ -1,0 +1,96 @@
+.Section{
+	padding: 6rem 0;
+}
+
+.Heading{
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 4rem;
+	
+	&__bold{
+		display: block;
+		font-weight: 600;
+	}
+
+	&__accent{
+		color: var(--c-p);
+	}
+		@media only screen and (max-width: 37.5rem) {
+			font-size: 3.2rem;
+			padding: 0 1rem;
+		}
+	@media only screen and (max-width: 20rem) {
+			font-size: 2.8rem;
+		}
+}
+
+
+.Wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	// align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.CardSpecial{
+	background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+}
+
+.Card{
+	min-width: 280px;
+	max-width: 320px;
+	border: 1px dashed var(--c-g);
+	border-radius: var(--br-md);
+	padding: 1.5rem;
+
+	&__Image{
+			border-radius: var(--br-sm);
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		&__Wrapper{
+			border-radius: var(--br-sm);
+			position: relative;
+		}
+	}
+
+	&__Title{
+		font-size: 1.8rem;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+		&__Description{
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+
+	&__Icon{
+		color: var(--c-p);
+		width: 24px;
+		height: 24px;
+
+		&__Wrapper{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #fff;
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 2;
+			-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+			-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+			box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+		}
+	}
+}

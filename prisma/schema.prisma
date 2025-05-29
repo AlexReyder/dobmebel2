@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  SUPERADMIN
+}
+
+enum Platform {
+  YANDEX
+  GIS
+}
+
+model User {
+   id        String    @id @default(uuid())
+   firstName String?
+   middleName String? 
+   lastName   String?
+   email      String @unique
+   phone      String
+   password   String
+   recoveryToken String
+   role            Role             @default(ADMIN)
+   createdAt DateTime  @default(now())
+   updatedAt DateTime  @updatedAt
+}
+
+model Order {
+   id     String    @id @default(uuid())
+   name   String
+   phone  String
+   type   String
+   createdAt DateTime  @default(now())
+   updatedAt DateTime  @updatedAt
+}
+
+model Quiz {
+   id     String    @id @default(uuid())
+   name   String
+   phone  String
+   data   Json[]
+   createdAt DateTime  @default(now())
+   updatedAt DateTime  @updatedAt
+}
+
+model Cases {
+   id     String    @id @default(uuid())
+   title   String
+   subtitle   String
+   prodtime String
+   style String
+   guarantee String
+   sizes String
+   height String
+   facade String
+   furniture String
+   profile String
+   price String
+   images Json
+   createdAt DateTime  @default(now())
+   updatedAt DateTime  @updatedAt
+}
+
+model Promo{
+  id     String    @id @default(uuid())
+  background   String  
+  identifier  String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Testimonials{
+  id     String    @id @default(uuid())
+  type   Platform   @default(YANDEX)
+  quote  String
+  author String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}

@@ -1,0 +1,139 @@
+.Left {
+	flex-basis: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media only screen and (max-width: 56.25rem) {
+		flex-basis: 100%;
+	}
+}
+.Right {
+	margin-top: 3rem;
+	align-self: flex-start;
+	flex-basis: 30%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	padding: 0 2rem;
+	@media only screen and (max-width: 56.25rem) {
+		display: none;
+	}
+}
+
+.Footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	border-top: 1px solid #e6e6e6;
+	@media only screen and (max-width: 30rem) {
+		flex-direction: column;
+		margin-top: 1rem;
+	}
+}
+
+.Bonus {
+	width: 100%;
+}
+
+
+.List {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: flex-start;
+	gap: 2rem;
+
+	@media only screen and (max-width: 30.125rem) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.ListIA {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: flex-start;
+	gap: 2rem;
+}
+
+.Card{
+
+	&__Blockquote{
+			background-color: var(--c-gb);
+			border-radius: var(--br-md);
+			padding: 1rem;
+	}
+
+	&__Avatar{
+			border-radius: 50%;
+			width: 56px;
+			height: 56px;
+			object-fit: cover;
+
+			&__Wrapper{
+				display: flex;
+				align-items: center;
+				gap: 1.5rem;
+				margin-bottom: 2rem;
+			}
+	}
+
+	&__AuthorData{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__Job{
+		font-size: 1.4rem;
+		color: var(--c-g);
+	}
+
+	&__Author{
+		font-style: normal;
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
+
+	&__Quote{
+		font-size: 1.6rem;
+		line-height: 1.6;
+		text-align: left;
+		margin-bottom: 2rem;
+	}
+}
+
+.BonusBlock{
+	width: 100%;
+
+	&__Text{
+		font-size: 1.6rem;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	&__FirstBonus{
+		margin-bottom: 1rem;
+	}
+}
+// .Body {
+// 	padding: 1rem 2rem;
+// 	// overflow-y: auto;
+
+// 	@media only screen and (max-width: 32.5rem) {
+// 		padding: 1rem;
+// 	}
+// }
+
+// .Body::-webkit-scrollbar {
+// 	width: 10px;
+// }
+// .Body::-webkit-scrollbar-track {
+// 	background-color: var(--color-primary);
+// }
+// .Body::-webkit-scrollbar-thumb {
+// 	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+// }

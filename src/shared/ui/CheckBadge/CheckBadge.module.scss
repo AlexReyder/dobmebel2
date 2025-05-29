@@ -1,0 +1,15 @@
+.BadgeWrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.BadgeIcon{
+	color: var(--c-p);
+	width: 24px;
+	height: 24px;
+}

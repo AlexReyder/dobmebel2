@@ -1,0 +1,15 @@
+.Link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:  3rem;
+	max-width: 280px;
+	font-size: 1.8rem;
+	font-weight: 500;
+	transition: all 0.3s;
+	cursor: pointer;
+	color: #fff;
+	&:hover{
+		transform: translate(4px, 5px);
+	}
+}

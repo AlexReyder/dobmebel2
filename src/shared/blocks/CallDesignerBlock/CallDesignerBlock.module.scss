@@ -1,0 +1,103 @@
+.Section{
+	margin: 6rem 0;
+	@media only screen and (max-width: 24rem) {
+		padding: 0 !important;
+	}
+}
+
+.Wrapper{
+  background: linear-gradient(-70deg, rgba(0, 0, 0, 0) 60%, rgba(255, 255, 255, 0.95) 40%), url('/img/bgs/cta1.jpeg') center center no-repeat;
+	background-size: cover;
+	backface-visibility: hidden;
+	width: 100vw;
+	max-width: 100%;
+	height: 70vh;
+	 -webkit-box-flex: 0;
+   -ms-flex: 0 0 70vh;
+   flex: 0 0 70vh;
+   height: 70vh;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: start;
+   -ms-flex-align: start;
+   align-items: flex-start;
+   -webkit-box-pack: start;
+   -ms-flex-pack: start;
+   justify-content: start;
+   color: white;
+	 border: 1px solid var(--c-g);
+	 border-radius: var(--br-lg);
+   transition: 500ms;
+	@media only screen and (max-width: 68.75rem) {
+			  background: webkit-linear-gradient(-70deg, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.95) 50%), url('/img/bgs/cta1.jpeg') center center no-repeat;
+			  background: linear-gradient(-70deg, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.95) 50%), url('/img/bgs/cta1.jpeg') center center no-repeat;
+				background-size: cover;
+		}
+	@media only screen and (max-width: 47rem) {
+		 background: webkit-linear-gradient(-15deg, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.95) 50%), url('/img/bgs/cta1.jpeg') center center no-repeat;
+		 background: linear-gradient(-15deg, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.95) 50%), url('/img/bgs/cta1.jpeg') center center no-repeat;
+		 background-size: cover;
+	}
+
+}
+
+.Left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1.5rem;
+	width: 40%;
+	height: 100%;
+	@media only screen and (max-width: 47rem) {
+		width: 100%;
+		height: 50%;
+	}
+}
+.Heading{
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-align: left;
+	margin-bottom: 1rem;	
+	&__Bold{
+		font-weight: 500;
+	}
+
+	&__Accent{
+		color: var(--c-p);
+	}
+	@media only screen and (max-width: 47rem) {
+		text-align: center;
+		margin-top: 2rem;
+	}
+	@media only screen and (max-width: 37.5rem) {
+		font-size: 2.8rem;
+	}
+}
+
+.Subheading{
+	font-size: 2rem;
+	font-weight: 400;
+	width: 80%;
+	margin-top: 1.5rem;
+		@media only screen and (max-width: 47rem) {
+		text-align: center;
+		width: 100%;
+	}
+	@media only screen and (max-width: 37.5rem) {
+		font-size: 1.8rem;
+	}
+}
+
+
+.Button{
+	margin-top: 4rem;
+	@media only screen and (max-width: 47rem) {
+		display: flex;
+		justify-content: center;
+	}
+	& > button{
+		max-width: 300px;
+	}
+}

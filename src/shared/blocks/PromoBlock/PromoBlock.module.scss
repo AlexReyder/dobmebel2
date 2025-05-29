@@ -1,0 +1,69 @@
+.Section{
+	position: relative;
+}
+.Heading{
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 4rem;
+	
+	&__bold{
+		font-weight: 600;
+	}
+}
+
+.Embla{
+	overflow: hidden;
+	margin: 0 7rem;
+}
+
+.Embla__Container{
+	display: flex;
+	gap: 4rem;
+}
+
+
+
+.Promo{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 2rem;
+	flex: 0 0 calc(100vw / 2 - 14rem);
+	min-width: 0;
+	width: calc(100vw / 2 - 14rem);
+	aspect-ratio: 4/3;
+	// max-width: 570px;
+	border-radius: var(--br-sm);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	& > img{
+			border-radius: var(--br-sm);
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+
+.EmblaDots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 6rem;
+}
+
+.EmblaDot{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 2px solid var(--c-g);
+	transition: border-color 0.3s ease-out;
+	&__Selected{
+		border-color: var(--c-p);
+	}
+}

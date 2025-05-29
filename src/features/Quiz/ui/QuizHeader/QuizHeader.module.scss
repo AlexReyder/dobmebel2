@@ -1,0 +1,29 @@
+.Wrapper{
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 4rem;
+	margin-top: 2rem;
+	@media only screen and (max-width: 26.25rem) {
+		flex-direction: column;
+	}
+}
+
+.QNumber{
+	padding: 1rem 3rem;
+	background-color: var(--c-p);
+	border-radius: var(--br-lg);
+	color: #fff;
+	flex-grow: 1;
+  min-width: fit-content;
+	max-width: max-content;
+}
+
+.QText{
+	font-weight: 600;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	@media only screen and (max-width: 32.5rem) {
+		font-size: 2rem;
+	}
+}

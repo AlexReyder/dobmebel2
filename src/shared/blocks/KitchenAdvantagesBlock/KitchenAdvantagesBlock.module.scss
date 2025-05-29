@@ -1,0 +1,117 @@
+.Section{
+	margin: 6rem 0;
+}
+
+.Heading{
+	font-size: 3.6rem;
+	font-weight: 400;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 4rem;
+	
+	&__bold{
+		display: block;
+		font-weight: 600;
+	}
+
+	&__accent{
+		color: var(--c-p);
+	}
+}
+
+
+.Wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6rem;
+}
+
+
+.Card{
+	min-width: 280px;
+	max-width: 1160px;
+	width: 100%;
+	border-radius: var(--br-md);
+	padding: 1.5rem;
+	position: relative;
+	height: 400px;
+
+	@media only screen and (max-width: 37.5rem) {
+				height: 100%;
+		}
+
+	&__Image{
+			border-radius: var(--br-sm);
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+		&__Wrapper{
+			border-radius: var(--br-sm);
+			position: relative;
+			height: 100%;
+			width: 100%;
+		}
+
+	}
+
+	&__Title{
+		font-size: 1.8rem;
+		font-weight: 500;
+		text-align: center;
+		color: #fff;
+		margin-top: 1rem;
+	}
+
+		&__Description{
+		font-size: 1.6rem;
+		color: #fff;
+		text-align: center;
+	}
+
+	&__Info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		height: 100%;
+		padding: 1rem;
+		border-radius: var(--br-md);
+		background-color: var(--c-p);
+			@media only screen and (max-width: 56.25rem) {
+				width: 45%
+			}
+
+			@media only screen and (max-width: 37.5rem) {
+				position: relative;
+				width: calc(100% - 4rem);
+				padding: 1rem;
+				margin: 0 auto;
+				top: -3rem;
+			}
+			
+
+		&__Icon{
+			width: 64px;
+			height: 64px;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+.Decorative{
+	position: absolute;
+	top: -7rem;
+	right: 0;
+	font-size: 64px;
+	font-weight: 900;
+	color: var(--c-g);
+	@media only screen and (max-width: 37.5rem) {
+			font-size: 52px;
+		}
+}
